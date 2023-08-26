@@ -52,7 +52,22 @@ contract crowdFunding {
     }
 
     function withdraw(uint256 _id)public payable{
+        Campaign storage campaign = campaigns[_id];
 
+        require(
+            campaign.owner == msg.sender,
+            "Only the owner of the campaign can withdraw the funds."
+        );
+
+        require(
+            campaign.amountCollected >= campaign.target,
+            "The campaign has not reached its target yet."
+        );
+
+        require(
+            campaign.deadline < block.timestamp,
+            "The deadline has not passed yet."
+        );
     }
 
     function getCampaign(uint256 _id)public view returns(
