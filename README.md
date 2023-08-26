@@ -1,4 +1,4 @@
-# Deployi a Crowd Funding Smart Contract to Goerli TestNet with Foundry 🚀
+# Deploy a Crowd Funding Smart Contract to Goerli TestNet with Foundry 🚀
 
 ## Prerequisites
 
