@@ -1,8 +1,4 @@
-# Deploying to Goerli TestNet with Foundry 🚀
-
-Welcome to the guide on deploying your Solidity contract to the Goerli TestNet using Foundry! This guide accompanies the YouTube video of the same name. If you're new to Foundry, I recommend going through the Foundry Book for a better understanding.
-
-Make sure to also check out the Foundry Cheat Sheet for quick reference.
+# Deployi a Crowd Funding Smart Contract to Goerli TestNet with Foundry 🚀
 
 ## Prerequisites
 
