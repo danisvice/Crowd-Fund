@@ -86,7 +86,7 @@ contract crowdFunding {
         string memory
     )
     {
-        Campaign memory campaign = campaigns[id];
+        Campaign memory campaign = campaigns[_id];
         return(
             campaign.owner,
         campaign.title,
@@ -95,6 +95,6 @@ contract crowdFunding {
         campaign.deadline,
         campaign.amountCollected,
         campaign.image
-        )
+        );
     }
 }
