@@ -68,6 +68,12 @@ contract crowdFunding {
             campaign.deadline < block.timestamp,
             "The deadline has not passed yet."
         );
+
+        (bool sent, ) = payable(campaign.owner).call{value: campaign.amountCollected}("");
+
+        if(sent){
+            campaign.amountCollected = 0;
+        }  
     }
 
     function getCampaign(uint256 _id)public view returns(
